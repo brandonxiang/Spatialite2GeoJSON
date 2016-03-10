@@ -11,8 +11,8 @@ namespace Spatialite2GeoJSON
     {
         static void Main(string[] args)
         {
-            var sg = new Spatialite2GeoJson("G:/brandon/SchoolHouse/SchoolPlanning.db");
-            Console.WriteLine(sg.GetGeoJson("PrimarySchoolDistrict"));
+            var sg = new Spatialite2GeoJson("YourDatabase.db");
+            Console.WriteLine(sg.GetGeoJson("YourTableName"));
         }
     }
 }
