@@ -1,20 +1,3 @@
-Spatialite 转换 GeoJSON 用C#
------------------------------
-由于C#在安装GDAL上存在问题，而又不想使用NetTopologySuite如此大型的库，希望在此写一个例子实现spatialite到GeoJSON的转换。
-
-此例子运用了以下第三方包：
-
-- System.Data.SQLite
-- GeoJSON.Net
-- SpatialiteSharp
-
-#####使用：
-
-```
-var sg = new Spatialite2GeoJson("YourDatabase.db");
-Console.WriteLine(sg.GetGeoJson("YourTableName"));
-```
-
 Spatialite Convert to GeoJSON by C#
 -----------------------------
 
@@ -32,3 +15,22 @@ This sample is powered by some packages:
 var sg = new Spatialite2GeoJson("YourDatabase.db");
 Console.WriteLine(sg.GetGeoJson("YourTableName"));
 ```
+
+Spatialite 转换 GeoJSON 用C#
+-----------------------------
+由于C#在安装GDAL上存在问题，而又不想使用NetTopologySuite如此大型的库，希望在此写一个例子实现spatialite到GeoJSON的转换。
+
+此例子运用了以下第三方包：
+
+- System.Data.SQLite
+- GeoJSON.Net
+- SpatialiteSharp
+
+#####使用：
+
+```
+var sg = new Spatialite2GeoJson("YourDatabase.db");
+Console.WriteLine(sg.GetGeoJson("YourTableName"));
+```
+
+
